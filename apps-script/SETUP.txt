@@ -1,0 +1,15 @@
+SETUP: save form data to Google Sheets (free)
+
+1. Go to sheets.google.com and create a new blank sheet. Name it "Cowartu Admissions".
+2. Click Extensions > Apps Script. Delete the sample code and paste everything from Code.gs. Click Save.
+3. Click the gear icon (Project Settings). Under "Script properties" click Add script property.
+   Name: ADMIN_KEY   Value: a strong password of your choice. This is your admin panel password.
+4. Click Deploy > New deployment. Click the gear next to "Select type" and choose Web app.
+   Execute as: Me
+   Who has access: Anyone
+   Click Deploy and allow the permissions. (If Google shows "unsafe", click Advanced > Go to project.)
+5. Copy the Web app URL (it ends with /exec).
+6. Open assets/js/config.js and paste it inside SHEET_URL:"" then upload the file to GitHub.
+7. Open admin.html on your site, enter your password, and download the Excel file.
+
+If you change Code.gs later, use Deploy > Manage deployments > Edit > New version > Deploy.
